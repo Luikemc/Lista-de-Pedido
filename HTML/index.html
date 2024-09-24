@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+
+        <ul class="navbar-nav">
+            <li class="active">
+                <a href="../HTML/index.html" class="nav-link">Cadastro</a>
+            </li>
+            <li class="nav-item">
+                <a href="../HTML/clientes.html" class="nav-link">Lista</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Formulário de Pedido</h2>
+        <form>
+            <!-- Campo Nome -->
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+
+            <!-- Campo Endereço -->
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+            </div>
+
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <!-- Grupo de Pedidos -->
+
+                    <!-- Campo Pedido -->
+                        <!-- Outras entradas do formulário -->
+                        
+                        <div class="mb-3">
+                            <label for="pedido" class="form-label">Pedido</label>
+                            <select class="form-select" id="pedido">
+                                <option value="gás">gás</option>
+                                <option value="água">água</option>
+                                <option value="água e gás">água e gás</option>
+                            </select>
+                        </div>
+
+                    <!-- Campo Quantidade -->
+                    <div class="mb-3">
+                        <label for="quantidade1" class="form-label">Quantidade</label>
+                        <input type="number" class="form-control" id="quantidade" placeholder="Digite a quantidade">
+                    </div>
+
+                    <!-- Campo Preço -->
+                    <div class="mb-3">
+                        <label for="preco1" class="form-label">Preço</label>
+                        <input type="number" class="form-control" id="preco" placeholder="Digite o preço">
+                    </div>
+
+                    <!-- Campo Detalhes -->
+                    <div class="mb-3">
+                        <label for="detalhes1" class="form-label">Detalhes</label>
+                        <textarea class="form-control" id="detalhes" rows="3" placeholder="Digite os detalhes do pedido"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão para adicionar mais tipos de pedidos -->
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="btn btn-primary ms-5 " id="btn1">Enviar Pedido</button>
+            <button type="button" class="btn btn-primary" onclick="informacoes.limpar()" >Limpar</button>
+            <button type="button" id="btnNovo">Novo Botão</button> <!-- Novo botão oculto -->
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../JS/informacoes.js"></script>
+    <!-- Script para adicionar mais tipos de pedidos -->
+    <script type="module" src="../JS/script.js"></script>
+</body>
+</html>
